@@ -21,3 +21,21 @@ services:
     build:
       context: ./cassandra3
 
+  couchbase2:
+    build:
+      context: ./couchbase2
+    ports:
+    - 8091
+
+  couchbase3:
+    build:
+      context: ./couchbase3
+    ports:
+    - 8091
+
+  couchbase4:
+    build:
+      context: ./couchbase4
+    ports:
+    - 8091
+
