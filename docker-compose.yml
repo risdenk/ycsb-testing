@@ -4,3 +4,9 @@ services:
     image: risdenk/ycsb-testing:ycsb
     volumes:
     - $PWD:/data
+    links:
+    - aerospike
+
+  aerospike:
+    image: aerospike:3.8.1
+
