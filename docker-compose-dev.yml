@@ -3,4 +3,7 @@ services:
   ycsb:
     build:
       context: ./ycsb
+      args:
+      - YCSB_VER=${YCSB_VER}
+      - YCSB_BINDING=${YCSB_BINDING}
 
