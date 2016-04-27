@@ -1,0 +1,6 @@
+version: '2'
+services:
+  ycsb:
+    build:
+      context: ./ycsb
+

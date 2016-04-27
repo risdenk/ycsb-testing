@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "placeholder"
+docker-compose run --rm ycsb /data/basic/run_test.sh

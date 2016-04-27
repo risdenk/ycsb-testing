@@ -1,0 +1,6 @@
+version: '2'
+services:
+  ycsb:
+    image: risdenk/ycsb-testing:ycsb
+    volumes:
+    - $PWD:/data
