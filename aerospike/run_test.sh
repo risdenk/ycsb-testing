@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 while ! nc -z aerospike 3000; do   
   sleep 0.2 # wait for 1/5 of the second before check again
 done

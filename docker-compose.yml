@@ -1,12 +1,23 @@
 version: '2'
 services:
   ycsb:
-    image: risdenk/ycsb-testing:ycsb
+    build:
+      context: ./ycsb
+      args:
+      - YCSB_VER=${YCSB_VER}
+      - YCSB_BINDING=${YCSB_BINDING}
     volumes:
     - $PWD:/data
-    links:
-    - aerospike
 
   aerospike:
-    image: aerospike:3.8.1
+    build:
+      context: ./aerospike
+
+  cassandra2:
+    build:
+      context: ./cassandra2
+
+  cassandra3:
+    build:
+      context: ./cassandra3
 
