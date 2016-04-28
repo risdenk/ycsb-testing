@@ -30,3 +30,15 @@ docker-compose down -v
 #docker-compose exec couchbase4 /setup.sh
 #docker-compose run --rm ycsb /data/couchbase4/run_test.sh
 #docker-compose down -v
+
+#docker-compose up -d elasticsearch1
+#docker-compose run --rm ycsb /data/elasticsearch1/run_test.sh
+#docker-compose down -v
+
+docker-compose up -d elasticsearch2
+docker-compose run --rm ycsb /data/elasticsearch2/run_test.sh
+docker-compose down -v
+
+#docker-compose up -d elasticsearch5
+#docker-compose run --rm ycsb /data/elasticsearch5/run_test.sh
+#docker-compose down -v

@@ -39,3 +39,15 @@ services:
     ports:
     - 8091
 
+  elasticsearch1:
+    build:
+      context: ./elasticsearch1
+
+  elasticsearch2:
+    build:
+      context: ./elasticsearch2
+
+  elasticsearch5:
+    build:
+      context: ./elasticsearch5
+
