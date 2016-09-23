@@ -1,9 +1,9 @@
-FROM java:8-jdk-alpine
+FROM openjdk:8-jdk-alpine
 
-RUN apk --no-cache add python
+RUN apk --no-cache add python wget openssl ca-certificates && update-ca-certificates
 
 ARG YCSB_VER
-ENV YCSB_VER ${YCSB_VER:-0.8.0}
+ENV YCSB_VER ${YCSB_VER:-0.11.0}
 ARG YCSB_BINDING
 ENV YCSB_BINDING ${YCSB_BINDING:-ycsb}
 
